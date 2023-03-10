@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DLsite title copy",
+  "version": "1.0",
+  "description": "DLsite商品ページのタイトルコピー",
+  "content_scripts": [{
+    "matches": ["https://www.dlsite.com/*"],
+    "run_at": "document_end",
+    "all_frames": true,
+    "js": ["main.js"]
+  }],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions" : [
+    "storage"
+  ]
+}
